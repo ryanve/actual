@@ -26,6 +26,12 @@ actual('color') // => 10
 - Works in Chrome 9+, FF6+, IE9+, Opera 12.1, Safari 5.1 or elsewhere via [`matchMedia`](https://developer.mozilla.org/en-US/docs/Web/API/Window.matchMedia#Browser_compatibility) or `msMatchMedia`
 - Results depend on browser `@media` support for the feature in question
 
+## [NPM](//npmjs.org/package/actual)
+
+```sh
+$ npm install actual
+```
+
 ## Contribute
 
 Contribute by making edits in [`/src`](./src) or reporting [issues](../../issues).
