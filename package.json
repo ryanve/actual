@@ -1,0 +1,21 @@
+{
+  "name": "actual",
+  "description": "Determine actual @media breakpoints",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ryanve/actual",
+  "license": "MIT",
+  "author": "Ryan Van Etten",
+  "keywords": ["breakpoint", "breakpoints", "responsive", "media queries", "viewport", "dimensions", "ender"],
+  "main": "./actual.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanve/actual.git"
+  },
+  "devDependencies": {
+    "aok": "~1.7.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.3.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}
