@@ -41,4 +41,4 @@ $ grunt jshint:src
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE.md)
