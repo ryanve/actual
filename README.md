@@ -5,7 +5,7 @@
 - <b>actual</b> calculates responsive breakpoints that <em>accurately</em> match CSS media queries
 - <b>actual</b> is based on [this gist](https://gist.github.com/ryanve/7924792)
 
-## API (0.1)
+## API ([0.1](../../releases))
 
 ### actual(feature, unit?, init?, step?)
 
