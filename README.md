@@ -21,6 +21,13 @@ actual('resolution', 'dpi') // => 96
 actual('color') // => 10
 ```
 
+### `actual.mq(query)`
+Test if a media query is active
+
+```js
+actual.mq('(width:30em)') // => boolean
+```
+
 ### `actual.feature(feature)`
 Create a partial function that gets <var>feature</var> in a given unit
 
