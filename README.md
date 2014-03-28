@@ -22,21 +22,25 @@ actual('color') // => 10
 ```
 
 ### `actual.mq(query)`
-Test if a media query is active
+- Test if a media query is active
+- <b>@return</b> boolean
 
 ```js
-actual.mq('(width:30em)') // => boolean
+actual.mq('tv')
+actual.mq('(width:30em)')
 ```
 
 ### `actual.feature(feature)`
-Create a partial function that gets <var>feature</var> in a given unit
+- Create a partial function that gets <var>feature</var> in a given unit
+- <b>@return</b> function
 
 ```js
 ['px', 'em', 'pt', 'in', 'cm', 'mm'].map(actual.feature('width'))
 ```
 
 ### `actual.as(unit)`
-Create a partial function that gets a given feature in <var>unit</var>
+- Create a partial function that gets a given feature in <var>unit</var>
+- <b>@return</b> function
 
 ```js
 ['width', 'height', 'device-width', 'device-height'].map(actual.as('px'))
