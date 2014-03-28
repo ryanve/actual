@@ -13,6 +13,7 @@
 - <var>unit</var>: applicable CSS unit (default: unitless)
 - <var>init</var>: initial guess (default: `1`)
 - <var>step</var>: step size (default: varies by unit)
+- <b>@return</b> number (breakpoint)
 
 ```js
 actual('width', 'em') // => 87.40625
