@@ -1,11 +1,11 @@
-# [actual](../../)
+# actual
 
 #### Determine actual `@media` breakpoints for [CSS <b>range</b> features](http://dev.w3.org/csswg/mediaqueries4/#media-descriptor-table)
 
 - <b>actual</b> calculates responsive breakpoints that <em>accurately</em> match CSS media queries
 - <b>actual</b> is based on [this gist](https://gist.github.com/ryanve/7924792)
 
-## API ([0.2](../../releases))
+## API
 
 ### `actual(feature, unit?, init?, step?)`
 

@@ -1,11 +1,5 @@
-/*!
- * actual 0.2.0+201402061122
- * https://github.com/ryanve/actual
- * MIT License 2014 Ryan Van Etten
- */
-
-(function(root, name, make) {
-  if (typeof module != 'undefined' && module['exports']) module['exports'] = make();
+!function(root, name, make) {
+  if (typeof module != 'undefined' && module.exports) module.exports = make();
   else root[name] = make();
 }(this, 'actual', function() {
 
@@ -34,7 +28,7 @@
     }
     return 0;
   }
-  
+
   /**
    * @param {string} unit
    * @return {Function}
@@ -44,7 +38,7 @@
       return actual(feature, unit);
     };
   }
-  
+
   /**
    * @param {string} feat
    * @return {Function}
@@ -54,7 +48,7 @@
       return actual(feat, unit);
     };
   }
-  
+
   var media = 'matchMedia', win = typeof window != 'undefined' && window;
   actual['actual'] = actual;
   actual['feature'] = feature;
@@ -64,6 +58,6 @@
   } : function() {
     return false;
   };
-  
+
   return actual;
-}));
+});
