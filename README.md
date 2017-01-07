@@ -1,11 +1,11 @@
-# [actual](../../)
+# actual
 
 #### Determine actual `@media` breakpoints for [CSS <b>range</b> features](http://dev.w3.org/csswg/mediaqueries4/#media-descriptor-table)
 
 - <b>actual</b> calculates responsive breakpoints that <em>accurately</em> match CSS media queries
 - <b>actual</b> is based on [this gist](https://gist.github.com/ryanve/7924792)
 
-## API ([0.2](../../releases))
+## API
 
 ### `actual(feature, unit?, init?, step?)`
 
@@ -52,25 +52,19 @@ actual.mq('(width:30em)')
 - Chrome 9+, FF6+, IE9+, Opera 12.1, Safari 5.1 or elsewhere via [`matchMedia`](https://developer.mozilla.org/en-US/docs/Web/API/Window.matchMedia#Browser_compatibility) or `msMatchMedia`
 - Results depend on browser `@media` support for the feature in question
 
-## [NPM](//npmjs.org/package/actual)
+## [npm](https://www.npmjs.com/package/actual)
 
-```sh
-$ npm install actual
+```
+npm install actual --save
 ```
 
 ## Contribute
 
-Contribute by making edits in [`/src`](./src) or reporting [issues](../../issues).
-
-```sh
-$ npm install
-$ grunt jshint:src
+```
+npm install
+npm test
 ```
 
 ## Fund
 
 <b>[Tip the developer](https://www.gittip.com/ryanve/)</b> =)
-
-## License
-
-[MIT](LICENSE.md)

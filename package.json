@@ -5,17 +5,50 @@
   "homepage": "https://github.com/ryanve/actual",
   "license": "MIT",
   "author": "Ryan Van Etten",
-  "keywords": ["breakpoint", "breakpoints", "responsive", "media queries", "viewport", "dimensions", "ender"],
+  "scripts": {
+    "pretest": "jshint actual.js && jshint test.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "breakpoint",
+    "breakpoints",
+    "responsive",
+    "media queries",
+    "media query",
+    "matchmedia",
+    "@media",
+    "media",
+    "viewport",
+    "resolution"
+    "dimensions",
+    "javascript",
+    "browser",
+    "ender"
+  ],
   "main": "./actual.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ryanve/actual.git"
   },
+  "bugs": {
+    "url": "https://github.com/ryanve/actual/issues"
+  },
+  "jshintConfig": {
+    "asi": false,
+    "boss": true,
+    "browser": true,
+    "eqnull": true,
+    "expr": true,
+    "supernew": true,
+    "lastsemic": true,
+    "latedef": "nofunc",
+    "maxerr": 5,
+    "node": true,
+    "sub": true,
+    "undef": true,
+    "unused": true
+  },
   "devDependencies": {
-    "aok": "~1.7.0",
-    "grunt": "~0.4.2",
-    "grunt-contrib-uglify": "~0.3.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-jshint": "~0.8.0"
+    "jshint": "^2.9.4"
   }
 }
