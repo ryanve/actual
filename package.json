@@ -14,8 +14,15 @@
     "breakpoints",
     "responsive",
     "media queries",
+    "media query",
+    "matchmedia",
+    "@media",
+    "media",
     "viewport",
+    "resolution"
     "dimensions",
+    "javascript",
+    "browser",
     "ender"
   ],
   "main": "./actual.js",
