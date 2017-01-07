@@ -68,7 +68,3 @@ npm test
 ## Fund
 
 <b>[Tip the developer](https://www.gittip.com/ryanve/)</b> =)
-
-## License
-
-[MIT](LICENSE.md)
