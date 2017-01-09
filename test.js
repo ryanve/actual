@@ -10,6 +10,7 @@
 
   ok(typeof actual('width'), 'number');
   ok(typeof actual.mq(''), 'boolean');
+  ok(actual.is, actual.mq);
   ok(actual.actual, actual);
   ok(actual.as('px')('width'), actual('width', 'px'));
 
