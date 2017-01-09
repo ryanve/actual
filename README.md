@@ -14,6 +14,7 @@
 - <var>init</var>: initial guess (default: `1`)
 - <var>step</var>: step size (default: varies by unit)
 - <b>@return</b> number (breakpoint)
+- Alias: `actual.actual`
 
 ```js
 actual('width', 'em') // => 87.40625
@@ -22,21 +23,14 @@ actual('resolution', 'dpi') // => 96
 actual('color') // => 10
 ```
 
-### `actual.mq(query)`
+### `actual.is(query)`
 - Test if a media query is active
 - <b>@return</b> boolean
+- Alias: `actual.mq`
 
 ```js
-actual.mq('tv')
-actual.mq('(width:30em)')
-```
-
-### `actual.feature(feature)`
-- Create a partial function that gets <var>feature</var> in a given unit
-- <b>@return</b> function
-
-```js
-['px', 'em', 'pt', 'in', 'cm', 'mm'].map(actual.feature('width'))
+actual.is('tv')
+actual.is('(width:30em)')
 ```
 
 ### `actual.as(unit)`

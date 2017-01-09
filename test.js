@@ -10,8 +10,8 @@
 
   ok(typeof actual('width'), 'number');
   ok(typeof actual.mq(''), 'boolean');
+  ok(actual.is, actual.mq);
   ok(actual.actual, actual);
-  ok(actual.feature('width')('px'), actual('width', 'px'));
   ok(actual.as('px')('width'), actual('width', 'px'));
 
   console.log('All tests passed =)');
