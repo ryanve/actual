@@ -14,6 +14,7 @@
 - <var>init</var>: initial guess (default: `1`)
 - <var>step</var>: step size (default: varies by unit)
 - <b>@return</b> number (breakpoint)
+- Alias: `actual.actual`
 
 ```js
 actual('width', 'em') // => 87.40625
