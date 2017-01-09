@@ -42,7 +42,7 @@
   var media = 'matchMedia', win = typeof window != 'undefined' && window;
   actual['actual'] = actual;
   actual['as'] = as;
-  actual['mq'] = win[media] || win[media = 'msMatchMedia'] ? function(q) {
+  actual['is'] = actual['mq'] = win[media] || win[media = 'msMatchMedia'] ? function(q) {
     return !!win[media](q).matches;
   } : function() {
     return false;
