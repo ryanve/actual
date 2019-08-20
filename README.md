@@ -61,4 +61,4 @@ npm test
 
 ## Fund
 
-<b>[Tip the developer](https://www.gittip.com/ryanve/)</b> =)
+<b>[Tip the developer](https://www.patreon.com/ryanve)</b> =)
