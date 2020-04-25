@@ -59,7 +59,3 @@ npm install
 npm test
 npm start
 ```
-
-## Fund
-
-<b>[Tip the developer](https://www.patreon.com/ryanve)</b> =)
