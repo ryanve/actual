@@ -57,6 +57,7 @@ npm install actual --save
 ```
 npm install
 npm test
+npm start
 ```
 
 ## Fund
