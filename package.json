@@ -7,6 +7,7 @@
   "author": "Ryan Van Etten",
   "scripts": {
     "pretest": "eslint .",
+    "start": "xdg-open index.html || open index.html || start index.html",
     "test": "node test"
   },
   "keywords": [
