@@ -6,8 +6,8 @@
   "license": "MIT",
   "author": "Ryan Van Etten",
   "scripts": {
-    "pretest": "jshint actual.js && jshint test.js",
-    "test": "node test.js"
+    "pretest": "eslint .",
+    "test": "node test"
   },
   "keywords": [
     "breakpoint",
@@ -25,7 +25,7 @@
     "browser",
     "ender"
   ],
-  "main": "./actual.js",
+  "main": "actual.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ryanve/actual.git"
@@ -33,22 +33,7 @@
   "bugs": {
     "url": "https://github.com/ryanve/actual/issues"
   },
-  "jshintConfig": {
-    "asi": false,
-    "boss": true,
-    "browser": true,
-    "eqnull": true,
-    "expr": true,
-    "supernew": true,
-    "lastsemic": true,
-    "latedef": "nofunc",
-    "maxerr": 5,
-    "node": true,
-    "sub": true,
-    "undef": true,
-    "unused": true
-  },
   "devDependencies": {
-    "jshint": "^2.9.4"
+    "eslint": "^6.8.0"
   }
 }
