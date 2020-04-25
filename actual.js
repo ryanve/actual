@@ -1,9 +1,6 @@
-!function(root, name, make) {
-  if (typeof module != "undefined" && module.exports) module.exports = make()
-  else root[name] = make()
-}(this, "actual", function() {
-
+!function(root) {
   /**
+   * @preserve npm.im/actual
    * @param {string} feature range feature name e.g. "width"
    * @param {string=} unit CSS unit for feature e.g. "em"
    * @param {number=} init initial guess
@@ -49,5 +46,7 @@
     return false
   }
 
-  return actual
-})
+  typeof module != "undefined" && module.exports
+    ? module.exports = actual
+    : root["actual"] = actual
+}(this)
