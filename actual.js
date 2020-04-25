@@ -3,17 +3,17 @@
    * @preserve npm.im/actual
    * @param {string} feature range feature name e.g. "width"
    * @param {string=} unit CSS unit for feature e.g. "em"
-   * @param {number=} init initial guess
+   * @param {number=} guess initial iteration
    * @param {number=} step size for iterations
-   * @return {number} breakpoint (0 if invalid unit or feature)
+   * @return {number} breakpoint or 0
    */
-  function actual(feature, unit, init, step) {
+  function actual(feature, unit, guess, step) {
     var up, gte, lte, curr, mq = actual["mq"]
     unit = typeof unit == "string" ? unit : ""
-    init = 0 < init ? unit ? +init : init>>0 : 1
+    guess = 0 < guess ? unit ? +guess : guess>>0 : 1
     // Step starts positive. Minimize iterations, unless feat may be "integer" type.
     step = 0 < step ? +step : 0 > step ? -step : "px" == unit ? 256 : unit ? 32 : 1
-    for (feature += ":", unit += ")", curr = init; step && 0 <= curr; curr+=step) {
+    for (feature += ":", unit += ")", curr = guess; step && 0 <= curr; curr+=step) {
       lte = mq("(min-" + feature + curr + unit)
       gte = mq("(max-" + feature + curr + unit)
       // Found: Use the floored value if it makes an exact match. Else return as is.

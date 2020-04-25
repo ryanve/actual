@@ -7,13 +7,13 @@
 
 ## API
 
-### `actual(feature, unit?, init?, step?)`
+### `actual(feature, unit="", guess=1, step=*)`
 
 - <var>feature</var>: [CSS range feature name](http://dev.w3.org/csswg/mediaqueries4/#media-descriptor-table)
 - <var>unit</var>: applicable CSS unit (default: unitless)
-- <var>init</var>: initial guess (default: `1`)
+- <var>guess</var>: initial iteration (default: `1`)
 - <var>step</var>: step size (default: varies by unit)
-- <b>@return</b> number (breakpoint)
+- <b>@return</b> number (breakpoint or `0`)
 - Alias: `actual.actual`
 
 ```js
