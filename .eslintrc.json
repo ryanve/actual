@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true
+  },
+  "rules": {
+    "no-const-assign": ["error"],
+    "no-dupe-else-if": ["error"],
+    "no-dupe-keys": ["error"],
+    "no-empty-pattern": ["error"],
+    "no-extra-parens": ["error"],
+    "no-extra-semi": ["error"],
+    "no-func-assign": ["error"],
+    "no-global-assign": ["error"],
+    "no-implicit-globals": ["error"],
+    "no-inner-declarations": ["error"],
+    "no-invalid-regexp": ["error"],
+    "no-redeclare": ["error"],
+    "no-tabs": ["error"],
+    "no-unreachable": ["error"],
+    "no-unsafe-negation": ["error"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "never"],
+    "valid-typeof": ["error"]
+  }
+}
