@@ -3,14 +3,19 @@
 <title>actual: Determine actual @media breakpoints</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="actual JavaScript module tests">
+  
+<style media=(color)>
+  ::selection { background: powderblue; color: mediumblue }
+  [href] { background: indigo; color: aquamarine }
+  html { background: rebeccapurple; color: aqua }
+</style>
+
 <style>
-  ::selection { background: MediumBlue; color: AliceBlue }
-  html { background: AliceBlue; color: black }
-  *, :before, :after { box-sizing: border-box }
-  html { font: 1em/2 sans-serif; }
+  * { box-sizing: border-box }
+  html { font: 2em/2 sans-serif; }
   body { width: 100%; margin: auto; padding: 1em }
   button:enabled:hover { cursor: pointer }
-  pre, code { -moz-tab-size: 2; -o-tab-size: 2; tab-size: 2 }
+  pre, code { tab-size: 2 }
   pre { white-space: pre-wrap; word-wrap: break-word; overflow: auto }
   h1, h2 { line-height: 1 }
   h2 { font-size: 1.5em }
